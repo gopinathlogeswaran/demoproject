@@ -21,6 +21,11 @@ public class LocationRestController {
         return new ResponseEntity<Location>(location, HttpStatus.OK);
     }
 
+    /**
+     * 
+     * @param city
+     * @return
+     */
     @GetMapping("/location/city/{city}")
     public ResponseEntity<Location> getLocationByCity(@PathVariable String city) {
         Location employee = locationRepository.findByCity(city);
