@@ -22,7 +22,7 @@ public class LocationRestController {
     }
 
     /**
-     * 
+     *  
      * @param city
      * @return
      */
