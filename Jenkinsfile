@@ -1,9 +1,12 @@
 pipeline {
     agent any
+    parameters {
+      string default: 'https://github.com/gopinathlogeswaran/demoproject.git',description: 'Enter the Source Code URL:', name: 'GIT_URL', trim: true
+    }
     stages {
         stage('checkout'){
             steps{
-               git 'https://github.com/gopinathlogeswaran/demoproject.git' 
+               git GIT_URL 
             }
         }
         
