@@ -1,0 +1,12 @@
+git
+authorize-project
+seed
+gradle
+junit
+checkstyle
+analysis-collector
+build-timeout
+email-ext
+git-parameter
+workflow-aggregator
+
